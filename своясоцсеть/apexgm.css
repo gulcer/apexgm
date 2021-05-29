@@ -1,3 +1,126 @@
 .message{
     background: #00F0Ff
 }
+.card{
+    justify-content: flex-end;
+}
+body{
+    background: #E5E5E5;
+    padding-top: 10rem ;
+    padding-left: 40rem;
+    
+}
+.phon{
+    width: 364px;
+    background: linear-gradient(208.05deg, #00FF38 0%, #00D0FE 53.47%, #00FFFF 92.01%);
+    border-radius: 6px;
+    padding-left: 18px;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    
+}
+.page{
+    width: 420px;
+    background: #C4C4C4;
+    padding-left: 28px;
+    padding-bottom: 34px;
+}
+.rc13{
+    padding: 10.5px;
+    display: flex;
+    justify-content: space-between;
+    width: 328px;
+    height: 156px;
+
+    background: linear-gradient(102.75deg, #00FF38 0%, #0FBFCA 54.17%, #1AA1B4 100%);
+    border-radius: 5px;
+}
+.ava{
+    border: 1px solid #15AFE0;
+    background-size: cover;
+    background-image: url(photo/ava.jpg);
+    width: 121.22px;
+
+}
+.knp{
+    display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+}
+.mph{
+    padding-top: 2rem;
+   
+    width: 328px;
+    
+}
+.ph{
+     background: #03FF86;
+     color: black
+}
+.phto{
+    width: 328px;
+    height: 223px;
+    background: linear-gradient(180deg, #24FFFF 0%, #24FF7C 97.4%);
+    border-radius: 5px;
+    display: flex;
+    align-items: flex-start;
+    padding: 5px;
+}
+.btt{
+    padding-left: 8rem;
+}
+.pt1{
+    width: 105.41px;
+    height: 100px;
+    background-image: url(photo/path.1.jpg);
+    border-radius: 5px;
+    background-size: cover
+    
+    
+    
+}
+.pt2{
+    width: 105.41px;
+    height: 100px;
+    background-image: url(photo/maxresdefault.jpg);
+    border-radius: 5px;
+    background-size: cover;
+    background-position: -50px;
+    align-self: flex-end;
+    
+}
+.pt3{
+    width: 105.41px;
+    height: 100px;
+    background-image: url(photo/Apex-Legends-Video-Game-Art-1804223.jpg);
+    border-radius: 5px;
+    background-size: cover;
+    
+}
+.photo:hover{
+    background-color:#03FF86 ;
+    color: black;
+}
+.photo{
+    margin-bottom: 1rem;
+    border: 0;
+    outline: none;
+}
+.photo:focus,.photo:active{
+    outline: none;
+    box-shadow: none;
+    background-color: #03FF86;
+    color: black;
+}
+.friends{
+    background: #00FFD1;
+}
+.news{
+    background: #05FF00;
+}
+.exit{
+    width: 60px;
+    display: block;
+    margin-left: auto;
+}
+    
