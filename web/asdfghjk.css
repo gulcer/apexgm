@@ -1,0 +1,11 @@
+.flex-container{
+    display: flex;
+    text-align: center;
+}
+body{
+    background: gold;
+}
+.flex-item{
+    background:aqua;
+    margin: 10px;
+}

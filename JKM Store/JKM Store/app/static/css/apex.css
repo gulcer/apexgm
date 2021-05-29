@@ -1,0 +1,35 @@
+
+.legends img{
+    height: 250px;
+    width: 390px;
+}
+.legends{
+    display: flex;
+    margin: 50px;
+    justify-content: space-around;
+    font-size: 20px;
+    margin-top: 30px;
+}
+.leg{
+    margin-left: 20px;
+    color: snow;
+}
+.games{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+    }
+.card-body{
+    color: white;
+    background: rgb(238, 171, 113);
+}
+.knp{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 30px;
+}
+footer{
+    margin-top:  100px
+
+}
+

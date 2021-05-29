@@ -1,0 +1,13 @@
+.lvl1{
+    text-shadow:2px 3px 3px #FFF;
+}
+body{
+    background: linear-gradient(to right, orange, yellow);
+}
+.lvl1{
+    box-shadow: 5px 5px 5px 5px white
+}
+.lvl1{
+    transition-duration: 2s;
+    transition-timing-function: linear;
+}

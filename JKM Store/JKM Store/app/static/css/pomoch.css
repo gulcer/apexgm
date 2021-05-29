@@ -1,0 +1,7 @@
+body{
+    background: linear-gradient(to left,rgb(0, 204, 255), white);
+}
+.games{
+    display: flex;
+    justify-content: space-evenly;
+}

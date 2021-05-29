@@ -1,0 +1,23 @@
+body{
+    background: linear-gradient(to right,#00ccff, white);
+}
+
+.col-md{
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 30px;
+}
+.col-md{
+    background: linear-gradient(to right,rgb(0, 204, 255), white);
+}
+
+.razd{
+    color: blue;
+}
+.btn-primar{
+    background-color: blue;
+    }
+    .container2{
+        width: 500px;
+        margin: auto;
+    }

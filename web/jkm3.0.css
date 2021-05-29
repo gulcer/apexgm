@@ -1,0 +1,19 @@
+.flex-container{
+flex-wrap: wrap;
+display: flex;
+}
+.flex-item{
+    margin: auto; 
+    background: linear-gradient(rgb(10, 255, 255), rgb(31, 206, 119));
+    flex-grow: 3;
+}
+.body{
+   
+}
+.footer{
+    flex-basis: auto;
+    background: aqua;
+}
+.body{
+    background-color: aqua;
+}

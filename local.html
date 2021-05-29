@@ -1,0 +1,30 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>
+        Приветствую, <span id="username">Anon</span>
+    </h1>
+</body>
+<script>
+    const username = localStorage.getItem('name');
+    const targetElem = document.querySelector("#username");
+
+    if (username) {
+        targetElem.textContent = username;
+    }
+
+    const newName = !username && prompt('Как тебя зовут?');
+    if (newName) {
+        localStorage.setItem('name', newName);
+        targetElem.textContent = newName;
+    }
+</script>
+
+</html>

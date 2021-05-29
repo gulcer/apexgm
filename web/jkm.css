@@ -1,0 +1,12 @@
+body{
+    background: silver;
+}
+    .prev img{
+    font-size: 250px;
+    width: 250px;
+    }
+    #W{
+        font-size: 40px;
+            width: 300px;
+            text-align: left;
+    }
