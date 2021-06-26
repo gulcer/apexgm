@@ -1,0 +1,85 @@
+
+.osnova{
+    width: 364.7px;
+    background: linear-gradient(30.65deg, #00FF38 0%, #00D0FE 58.35%, #00FFFF 100.03%);
+    border-radius: 6px;
+    height: 474px;
+    position: relative;
+    
+}
+body{
+    margin-top: 7rem;
+    display: flex;
+    justify-content: center;
+}
+.message{
+    background: #24FF7C;
+    border-radius: 43px;
+    width: 185px;
+    display: flex;
+    height: 21px;
+    justify-content: center;
+    margin: 23px auto;
+    
+}
+.chat{
+    background: #00FFD1;
+    border-radius: 3px;
+    width: 318px;
+    margin: 0 23px;
+    padding-bottom: 5px;
+    display: flex;
+    align-items: center;
+    
+}
+.photo{
+    margin-left: 0.5rem;
+    width: 40px;
+    height: 40px;
+    border-radius: 40px;
+    background-image: url(photo/mirage.png);
+    background-size: cover;
+    background-color: white;
+}
+.name{
+margin-left: 1rem;
+border-radius: 1px;
+font-size: 9px;
+line-height: 6px;
+background-color: #1AA1B4;
+}
+.txt{
+    background-color: #00D0FE;
+    margin:0 3rem;
+    border-radius: 6px;
+    padding: 5px;
+}
+.but{
+    background-image: linear-gradient(30.65deg,#00FF38 0%, #00FF38 58.35%,#00FF38 100.03%);
+    color: black;
+    
+}
+.but:focus, .but:active{
+    
+    box-shadow: none;
+
+}
+.in{
+   border-radius: 40px;
+   outline: none;
+}
+.vvod{
+    display: flex;
+    padding: 5px;
+    background-color: turquoise;
+    
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 5px;
+}
+.btn-check:active+.btn-outline-info:focus, .btn-check:checked+.btn-outline-info:focus, .btn-outline-info.active:focus, .btn-outline-info.dropdown-toggle.show:focus, .btn-outline-info:active:focus {
+    box-shadow: none;
+}
+

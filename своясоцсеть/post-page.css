@@ -1,0 +1,43 @@
+body{
+    display: flex;
+    justify-content: center;
+
+}
+
+
+
+
+.osnova{
+    margin-top: 5rem;
+    width: 364.7px;
+    background: linear-gradient(30.65deg, #00FF38 0%, #00D0FE 58.35%, #00FFFF 100.03%);
+    border-radius: 6px;
+    height: 474px;
+
+    
+}
+.nickname{
+    
+    margin-top: 1rem;
+    margin-left: 9.5px;
+    width: 344.7px;
+    background-color: aquamarine;
+    border-radius: 40px;
+   
+    
+}
+.photo{
+    
+    margin-left: 1rem;
+    width: 40px;
+    height: 40px;
+    background-image: url(photo/mirage.png);
+    border-radius: 40px;
+    background-size: cover;
+    background-color: white;
+
+}
+.name{
+    background-color: teal;
+    
+}
