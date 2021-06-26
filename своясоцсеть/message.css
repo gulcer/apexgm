@@ -4,6 +4,7 @@
     background: linear-gradient(30.65deg, #00FF38 0%, #00D0FE 58.35%, #00FFFF 100.03%);
     border-radius: 6px;
     height: 474px;
+
     position: relative;
     
 }
@@ -11,6 +12,7 @@ body{
     margin-top: 7rem;
     display: flex;
     justify-content: center;
+
 }
 .message{
     background: #24FF7C;
@@ -53,6 +55,7 @@ background-color: #1AA1B4;
     margin:0 3rem;
     border-radius: 6px;
     padding: 5px;
+
 }
 .but{
     background-image: linear-gradient(30.65deg,#00FF38 0%, #00FF38 58.35%,#00FF38 100.03%);
@@ -82,4 +85,6 @@ background-color: #1AA1B4;
 .btn-check:active+.btn-outline-info:focus, .btn-check:checked+.btn-outline-info:focus, .btn-outline-info.active:focus, .btn-outline-info.dropdown-toggle.show:focus, .btn-outline-info:active:focus {
     box-shadow: none;
 }
+
+
 
