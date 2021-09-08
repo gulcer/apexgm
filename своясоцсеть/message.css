@@ -1,20 +1,20 @@
-
-.osnova{
+.osnova {
     width: 364.7px;
     background: linear-gradient(30.65deg, #00FF38 0%, #00D0FE 58.35%, #00FFFF 100.03%);
     border-radius: 6px;
     height: 474px;
-
+    margin: 30px;
     position: relative;
-    
 }
-body{
+
+body {
     margin-top: 7rem;
     display: flex;
     justify-content: center;
-
+    background-size: cover;
 }
-.message{
+
+.message {
     background: #24FF7C;
     border-radius: 43px;
     width: 185px;
@@ -22,9 +22,9 @@ body{
     height: 21px;
     justify-content: center;
     margin: 23px auto;
-    
 }
-.chat{
+
+.chat {
     background: #00FFD1;
     border-radius: 3px;
     width: 318px;
@@ -32,9 +32,9 @@ body{
     padding-bottom: 5px;
     display: flex;
     align-items: center;
-    
 }
-.photo{
+
+.photo {
     margin-left: 0.5rem;
     width: 40px;
     height: 40px;
@@ -43,48 +43,107 @@ body{
     background-size: cover;
     background-color: white;
 }
-.name{
-margin-left: 1rem;
-border-radius: 1px;
-font-size: 9px;
-line-height: 6px;
-background-color: #1AA1B4;
+
+.name {
+    margin-left: 1rem;
+    border-radius: 1px;
+    font-size: 9px;
+    line-height: 6px;
+    background-color: #1AA1B4;
 }
-.txt{
+
+.txt {
     background-color: #00D0FE;
-    margin:0 3rem;
+    margin: 0 3rem;
     border-radius: 6px;
     padding: 5px;
-
 }
-.but{
-    background-image: linear-gradient(30.65deg,#00FF38 0%, #00FF38 58.35%,#00FF38 100.03%);
+
+.but {
+    background-image: linear-gradient(30.65deg, #00FF38 0%, #00FF38 58.35%, #00FF38 100.03%);
     color: black;
-    
 }
-.but:focus, .but:active{
-    
-    box-shadow: none;
 
+.but:focus,
+.but:active {
+    box-shadow: none;
 }
-.in{
-   border-radius: 40px;
-   outline: none;
+
+.in {
+    border-radius: 40px;
+    outline: none;
 }
-.vvod{
+
+.vvod {
     display: flex;
     padding: 5px;
     background-color: turquoise;
-    
     position: absolute;
     bottom: 0;
     left: 50%;
     transform: translate(-50%, -50%);
     border-radius: 5px;
 }
-.btn-check:active+.btn-outline-info:focus, .btn-check:checked+.btn-outline-info:focus, .btn-outline-info.active:focus, .btn-outline-info.dropdown-toggle.show:focus, .btn-outline-info:active:focus {
+
+.btn-check:active+.btn-outline-info:focus,
+.btn-check:checked+.btn-outline-info:focus,
+.btn-outline-info.active:focus,
+.btn-outline-info.dropdown-toggle.show:focus,
+.btn-outline-info:active:focus {
     box-shadow: none;
 }
 
+.test {
+    background-color: #00FFFF;
+    padding: 5px;
+    border-radius: 8px;
+    width: 12rem;
+    margin: 15px;
+}
 
+.otvet {
+    background-color: #00FFFF;
+    padding: 5px;
+    border-radius: 8px;
+    width: 12rem;
+    margin: 15px;
+}
 
+.chat1,
+.chat2 {
+    overflow: auto;
+    max-height: 300px;
+}
+
+body {
+    background-image: url(photo/thumb-1920-1013373.png);
+}
+
+.tbu {
+    margin: 10px;
+}
+
+.mes {
+    background: #24FF7C;
+    border-radius: 43px;
+    width: 185px;
+    display: flex;
+    height: 21px;
+    justify-content: center;
+    margin: 23px auto;
+}
+
+.maket {
+    display: flex;
+    justify-content: space-between;
+}
+
+.photo29 {
+    margin-left: 0.5rem;
+    width: 40px;
+    height: 40px;
+    border-radius: 40px;
+    background-image: url(photo/vkuhqpoBskc.jpg);
+    background-size: cover;
+    background-color: white;
+}

@@ -7,8 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="message.css">
     <!-- CSS only -->
 
@@ -17,57 +16,190 @@
 </head>
 
 <body>
-    <div class="osnova">
-        <div class="message">
+    <div class="maket">
+
+        <div class="osnova">
+            <div class="btn-group" role="group" aria-label="Basic example">
+                <a href="apexgm.html" type="button" class="btn btn-primary">Домой</a>
+                <a href="news.html" type="button" class="btn btn-primary">Новости</a>
+                <a type="button" class="btn btn-primary">Right</a>
+            </div>
+
             <span class="mes">сообщения</span>
-        </div>
-        <div class="chat">
-            <div class="start">
-                <span class="name">Ваня</span>
-                <div class="photo"></div>
+
+            <div class="chat1">
+
+                <div class="chat">
+                    <div class="start">
+                        <span class="name">Ваня</span>
+                        <div class="photo"></div>
+                    </div>
+                    <div class="txt">
+                        <span>Ваня</span>:
+                        <span>Привет, как дела?</span>
+                    </div>
+
+                </div>
             </div>
-            <div class="txt">
-                <span>Ваня</span>:
-                <span>Привет, как дела?</span>
+            <div class="vvod">
+                <input id="input" class="in" type="text">
+                <button type="button" id="send" class="btn btn-outline-info but">отправить</button>
+            </div>
+        </div>
+
+        <div class="osnova">
+            <div class="btn-group" role="group" aria-label="Basic example">
+                <a href="apexgm.html" type="button" class="btn btn-primary">Домой</a>
+                <a href="news.html" type="button" class="btn btn-primary">Новости</a>
+                <a type="button" class="btn btn-primary">Right</a>
             </div>
 
-        </div>
+            <span class="mes">сообщения</span>
 
-        <div class="vvod">
-            <input id="input" class="in" type="text">
-            <button type="button" id="send" class="btn btn-outline-info but">отправить</button>
+            <div class="chat2">
+
+                <div class="chat">
+                    <div class="start">
+                        <span class="name">Серёжа</span>
+                        <div class="photo29"></div>
+                    </div>
+                    <div class="txt">
+                        <span>Серёжа</span>:
+                        <span>Привет, как дела?</span>
+                    </div>
+
+                </div>
+            </div>
+            <div class="vvod">
+                <input id="input2" class="in" type="text">
+                <button type="button" id="send2" class="btn btn-outline-info but">отправить</button>
+            </div>
         </div>
     </div>
-
     <script>
+        let chat2 = document.querySelector('.chat2')
+        const input2 = document.getElementById("input2")
+        const button2 = document.getElementById("send2")
+        let mess = document.querySelector('.chat1')
         const input = document.getElementById("input")
         const button = document.getElementById("send")
 
+
+
+        button2.addEventListener('click', () => {
+            send(mess, {
+                text: input2.value,
+                to: "Серёжа",
+                from: "Ваня"
+            })
+
+        })
+
         button.addEventListener('click', () => {
+            send(chat2, {
+                text: input.value,
+                to: "Ваня",
+                from: "Серёжа"
+            })
+
+        })
+
+
+        fetch('http://localhost:8000/get-mail', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                    Accept: 'application/json'
+                }
+
+            }
+
+        ).then(res => res.json()).then(res => {
+
+
+            res.history.forEach(item => render(item))
+        })
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        function send(chat, compact) {
             fetch('http://localhost:8000/send-mail', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
                     Accept: 'application/json'
                 },
-                body: JSON.stringify({
-                    text: input.value,
-                    to: 'Vasya',
-                    from: 'Sergey'
-                })
+                body: JSON.stringify(compact)
+            }).then(res => {
+                if (res.ok) {
+                    render(compact, chat)
+                    input.value = '';
+                }
+
             });
-            input.value = '';
-        })
+
+
+        }
+
+
+
+
+
+
+        function make(tag, classes = [], attrs = {}) {
+            const element = document.createElement(tag);
+
+            classes.forEach(item => {
+                element.classList.add(item);
+            })
+
+            for (let key in attrs) {
+                element[key] = attrs[key];
+            }
+
+            return element;
+        }
+
+
+
+
+        function render(item, chat) {
+            let text = item.from + ': ' + item.text
+
+
+            let lem = make('div', ['test'])
+
+            lem.textContent = text
+
+
+            chat.append(lem)
+        }
     </script>
 
 
 
     <!-- JavaScript Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 
-    
+
 
 </body>
 

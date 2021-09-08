@@ -6,8 +6,10 @@
 }
 body{
     background: #E5E5E5;
-    padding-top: 10rem ;
-    padding-left: 40rem;
+    display: flex;
+    justify-content: center;
+    margin-top: 7rem;
+    background-size: cover;
     
 }
 .phon{
@@ -19,12 +21,7 @@ body{
     padding-bottom: 1.5rem;
     
 }
-.page{
-    width: 420px;
-    background: #C4C4C4;
-    padding-left: 28px;
-    padding-bottom: 34px;
-}
+
 .rc13{
     padding: 10.5px;
     display: flex;
@@ -124,3 +121,6 @@ body{
     margin-left: auto;
 }
     
+body{
+    background-image: url(photo/thumb-1920-1013373.png);
+}
