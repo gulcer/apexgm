@@ -2,7 +2,7 @@
     margin-top: 13rem;
     width: 364.7px;
     height: 500px;
-    background: linear-gradient(29.18deg, #00FB19 0%, #00FBDD 47.92%, #00FBCE 97.92%);
+    background: radial-gradient(50% 50% at 50% 50%, #4200FF 0%, #651DC0 53.19%, #000000 100%);
     border-radius: 4px;
 }
 
@@ -14,7 +14,7 @@ body {
 }
 
 body {
-    background-image: url(photo/thumb-1920-1013373.png);
+    background-image: url(photo/galaktika_zemlia_set_126341_3840x2160.jpg);
 }
 
 .history {
@@ -22,15 +22,18 @@ body {
     height: 190px;
     margin-left: 26px;
     padding-top: 40px;
-    background: #00FF0A;
+    background-image: url(photo/Group\ 1.png);
     margin-top: 20px;
+    border-radius: 6px;
+    background-size: cover;
+    
 }
 
 .osn {
     width: 284px;
     height: 104px;
     display: flex;
-    background: #07EEE0;
+    background: #0883B8;
     border-radius: 3px;
     margin: auto;
     justify-content: space-around;
@@ -64,10 +67,11 @@ body {
 .kli {
     width: 314px;
     height: 190px;
-    background: #1BE9DC;
+    background: #0883B8;
     margin-left: 26px;
     margin-top: 45px;
     padding-top: 20px;
+    border-radius: 6px;
 }
 
 .ph4 {
@@ -81,7 +85,11 @@ body {
 
 .text {
     width: 100px;
-    height: 20px;
-    background: #1AE9E9;
+    background: #0883B8;
     border-radius: 6px;
+    text-align: center;
+    margin: -20px auto 20px;
+    background-image: url(photo/mlechnyj_put_zvezdnoe_nebo_zvezdy_128523_3840x2160.jpg);
+    background-size: cover;
+    color: white;
 }

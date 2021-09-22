@@ -1,5 +1,6 @@
 .message{
-    background: #00F0Ff
+    background: #3201E9;
+    color: white;
 }
 .card{
     justify-content: flex-end;
@@ -8,13 +9,14 @@ body{
     background: #E5E5E5;
     display: flex;
     justify-content: center;
-    margin-top: 7rem;
     background-size: cover;
+    height: 100%;
+    align-items: center;
     
 }
 .phon{
     width: 364px;
-    background: linear-gradient(208.05deg, #00FF38 0%, #019cbe 53.47%, #00FFFF 92.01%);
+    background: linear-gradient(252.56deg, #002FFF 0.48%, #6E09BE 51.28%, #000000 100%);
     border-radius: 6px;
     padding-left: 18px;
     padding-top: 1.5rem;
@@ -29,7 +31,7 @@ body{
     width: 328px;
     height: 156px;
 
-    background: linear-gradient(102.75deg, #00FF38 0%, #0FBFCA 54.17%, #1AA1B4 100%);
+    background: linear-gradient(286.61deg, #5906C1 35.7%, #4804D2 53.26%, #3201E8 76.32%);
     border-radius: 5px;
 }
 .ava{
@@ -51,13 +53,14 @@ body{
     
 }
 .ph{
-     background: #03FF86;
-     color: black
+     background-image: url(photo/mlechnyj_put_zvezdnoe_nebo_zvezdy_128523_3840x2160.jpg);
+     color: white;
+     background-size: cover
 }
 .phto{
     width: 328px;
     height: 223px;
-    background: linear-gradient(180deg, #24FFFF 0%, #24FF7C 97.4%);
+    background: linear-gradient(286.61deg, #5906C1 35.7%, #4804D2 53.26%, #3201E8 76.32%);
     border-radius: 5px;
     display: flex;
     align-items: flex-start;
@@ -96,7 +99,7 @@ body{
 }
 .photo:hover{
     background-color:#03FF86 ;
-    color: black;
+    color: white;
 }
 .photo{
     margin-bottom: 1rem;
@@ -107,13 +110,15 @@ body{
     outline: none;
     box-shadow: none;
     background-color: #03FF86;
-    color: black;
+    color: white;
 }
 .friends{
-    background: #00FFD1;
+    background: #4203D9;
+    color: white;
 }
 .news{
-    background: #05FF00;
+    background: #3702E4;
+    color: white;
 }
 .exit{
     width: 60px;
@@ -122,5 +127,14 @@ body{
 }
     
 body{
-    background-image: url(photo/thumb-1920-1013373.png);
+    background-image: url(photo/galaktika_zemlia_set_126341_3840x2160.jpg);
+}
+.ph:hover{
+    color: white;
+}
+.news:hover, .friends:hover, .message:hover{
+    color: white;
+}
+html{
+    height: 100%;
 }

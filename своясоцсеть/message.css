@@ -1,6 +1,6 @@
 .osnova {
     width: 364.7px;
-    background: linear-gradient(30.65deg, #00FF38 0%, #00D0FE 58.35%, #00FFFF 100.03%);
+    background: radial-gradient(50% 158.02% at 50% 50%, #1E07AB 45.83%, #000000 86.46%);
     border-radius: 6px;
     height: 474px;
     margin: 30px;
@@ -15,7 +15,7 @@ body {
 }
 
 .message {
-    background: #24FF7C;
+    background: #8F01FF;
     border-radius: 43px;
     width: 185px;
     display: flex;
@@ -25,7 +25,7 @@ body {
 }
 
 .chat {
-    background: #00FFD1;
+    background: #3D0DA3;
     border-radius: 3px;
     width: 318px;
     margin: 0 23px;
@@ -60,13 +60,17 @@ body {
 }
 
 .but {
-    background-image: linear-gradient(30.65deg, #00FF38 0%, #00FF38 58.35%, #00FF38 100.03%);
-    color: black;
+    background-image:  linear-gradient(252.56deg, #002FFF 0.48%, #8F00FF 59.05%);
+    color: white;
+    border-color: black;
 }
 
 .but:focus,
-.but:active {
+.but:active,
+.but:hover {
     box-shadow: none;
+    color: white;
+    border-color: black;
 }
 
 .in {
@@ -77,7 +81,7 @@ body {
 .vvod {
     display: flex;
     padding: 5px;
-    background-color: turquoise;
+    background-color: #3D0DA3;
     position: absolute;
     bottom: 0;
     left: 50%;
@@ -99,6 +103,7 @@ body {
     border-radius: 8px;
     width: 12rem;
     margin: 15px;
+    word-break: break-word;
 }
 
 .otvet {
@@ -116,7 +121,7 @@ body {
 }
 
 body {
-    background-image: url(photo/thumb-1920-1013373.png);
+    background-image: url(photo/galaktika_zemlia_set_126341_3840x2160.jpg);
 }
 
 .tbu {
@@ -124,13 +129,14 @@ body {
 }
 
 .mes {
-    background: #24FF7C;
+    background: #3D0DA3;
     border-radius: 43px;
     width: 185px;
     display: flex;
     height: 21px;
     justify-content: center;
     margin: 23px auto;
+    color: white;
 }
 
 .maket {
